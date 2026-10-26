@@ -26,17 +26,21 @@ metadata:
     - id: ATR-AI-AGENT-VECTOR-CATALOG
       title: AI Agent Attack Vector Catalog (ATR)
       version: "1.0.0"
-      url: "oci://ghcr.io/agent-threat-rule/agent-threat-rules/gemara:1.0.0"
+      url: "https://raw.githubusercontent.com/Agent-Threat-Rule/agent-threat-rules/v4.2.1/spec/category-registry/gemara/atr-attack-vector-catalog.yaml"
       description: >
         One vector per ATR detection category. Each vector id is a category
         id, which is also the directory under rules/ in the ATR repository.
+        The same file is the layer with digest sha256:88d9064f470170a69d2b5b321227769be9e42a37345aaaca007414fd036e996b
+        in the signed bundle oci://ghcr.io/agent-threat-rule/agent-threat-rules/gemara:1.0.0.
     - id: ATR-AI-AGENT-CAPABILITY-CATALOG
       title: AI Agent Capability Catalog
       version: "1.0.0"
-      url: "oci://ghcr.io/agent-threat-rule/agent-threat-rules/gemara:1.0.0"
+      url: "https://raw.githubusercontent.com/Agent-Threat-Rule/agent-threat-rules/v4.2.1/spec/category-registry/gemara/ai-agent-capability-catalog.yaml"
       description: >
         Capabilities of AI agent systems that create the opportunity for the
-        threats ATR detects.
+        threats ATR detects. The same file is the layer with digest
+        sha256:841c4c708b06ebba15f08e025398c852d4e3da085d03a15324ea05827e2a62e0
+        in the signed bundle oci://ghcr.io/agent-threat-rule/agent-threat-rules/gemara:1.0.0.
 
 source-reference:
   reference-id: ATR-AI-AGENT-VECTOR-CATALOG
